@@ -1,7 +1,6 @@
 package pl.bk20.forest
 
 import org.junit.Test
-
 import org.junit.Assert.*
 
 /**
