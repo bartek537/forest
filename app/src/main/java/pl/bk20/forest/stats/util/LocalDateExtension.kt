@@ -32,11 +32,11 @@ fun List<Day>.toChartValues(
     val weekdayName = it.date.dayOfWeek.getDisplayName(TextStyle.SHORT, locale)
     val isSelected = it.date.isEqual(activeDay)
     val barColor =
-        if (isSelected) R.attr.colorPrimary
+        if (isSelected) android.R.attr.colorPrimary
         else R.attr.colorPrimaryContainer
     val textColor =
-        if (isSelected) R.attr.colorPrimary
-        else R.attr.colorAccent
+        if (isSelected) android.R.attr.colorPrimary
+        else R.attr.colorOnSurface
     ChartAdapter.ChartValue(
         it.date,
         value = value,

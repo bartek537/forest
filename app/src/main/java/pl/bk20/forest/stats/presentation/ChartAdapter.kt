@@ -66,10 +66,10 @@ class ChartAdapter<T>(
 
         val label: String,
 
-        @AttrRes
+        @field:AttrRes
         val barColor: Int,
 
-        @AttrRes
+        @field:AttrRes
         val textColor: Int,
     )
 

@@ -18,12 +18,12 @@ import androidx.navigation.fragment.findNavController
 import pl.bk20.forest.R
 import pl.bk20.forest.databinding.FragmentActivityRecognitionPermissionBinding
 
-@RequiresApi(Build.VERSION_CODES.Q)
 class ActivityRecognitionPermissionFragment : Fragment() {
 
     private var _binding: FragmentActivityRecognitionPermissionBinding? = null
     private val binding get() = _binding!!
 
+    @RequiresApi(Build.VERSION_CODES.Q)
     private val requestPermissionLauncher = registerForActivityResult(RequestPermission()) {
         when (ContextCompat.checkSelfPermission(
             requireContext(), Manifest.permission.ACTIVITY_RECOGNITION
@@ -54,11 +54,16 @@ class ActivityRecognitionPermissionFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.Q) {
+            openMainActivity()
+            return
+        }
         binding.buttonContinue.setOnClickListener {
             requestPermission()
         }
     }
 
+    @RequiresApi(Build.VERSION_CODES.Q)
     private fun requestPermission() {
         requestPermissionLauncher.launch(Manifest.permission.ACTIVITY_RECOGNITION)
     }
