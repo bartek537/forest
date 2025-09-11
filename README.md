@@ -6,17 +6,19 @@ Track your daily step count, stay healthy and fight the climate change, one step
 
 ## 🦁 Table of Contents
 
-
 - [Forest](#forest)
-  - [🦁 Table of Contents](#-table-of-contents)
-  - [🌳 Inspiration](#-inspiration)
-  - [🥕 Features](#-features)
-  - [🐻‍❄️ Installation and First Launch](#️-instalation-and-first-launch)
-  - [🪴 Technologies](#-technologies)
+    - [🦁 Table of Contents](#-table-of-contents)
+    - [🌳 Inspiration](#-inspiration)
+    - [🥕 Features](#-features)
+    - [🐻‍❄️ Installation and First Launch](#-installation-and-first-launch)
+    - [🪴 Technologies](#-technologies)
+    - [🐌 Resources](#-resources)
 
 ## 🌳 Inspiration
 
-A couple of years ago together with my friends, I took a part in a programming competition. The objective was to build a mobile app that solves a global problem. We didn't win, but the app we built quickly spread in our families.
+A couple of years ago together with my friends, I took part in a programming competition. The
+objective was to build a mobile app that solves a global problem. We didn't win, but the app we
+built quickly spread in our families.
 
 ## 🥕 Features
 
@@ -24,7 +26,7 @@ A couple of years ago together with my friends, I took a part in a programming c
 
 <br />
 
-- Track your step count, burnt calories, distance travelled and CO₂ saved
+- Track your step count, burned calories, distance traveled and CO₂ saved
 - Get rewarded by completing your daily goal and stay motivated
 - Get handy notifications when your daily stats get updated
 - View a daily history of your progress
@@ -32,15 +34,33 @@ A couple of years ago together with my friends, I took a part in a programming c
 
 ## 🐻‍❄️ Installation and First Launch
 
-1. Download the latest prebuilt binary (.apk file) from [Releases](https://github.com/bk20dev/forest/releases)
-2. Run the downloaded file and temporarily allow instalation from unknown sources if prompted (turn it back off after installation).
-3. Click "Install" and wait for the app to install.
-4. On some devices you may encounter a Play Protect warning, but don't worry - the app is safe to use, and open-sourced. I'm just an unverified developer.
+1. Download the **latest stable** application binary (.apk file) from
+   [Releases](https://github.com/bartek537/forest/releases).
+2. Tap on the downloaded file and temporarily **allow installation from unknown sources**,
+   if prompted (turn it back off after installation).
+3. On some devices you may encounter a Play Protect warning, but don't worry — the app is safe
+   to use and open-sourced. I'm just an unverified developer.
+4. Click “Install” and wait for the app to install.
 5. You are now good to go 🚀.
 
-🚨 **Heads up!** On most devices you'll need to **turn off the app battery optimizations** for the app to count steps accurately. Forest uses a minimal amount of power and it won't impact your battery life.
+[//]: # (@formatter:off)
 
-> Guide for Xiaomi Devices (MIUI 14). Go to `Settings > Apps > Manage Apps > Forest > Battery saver` and select "No restrictions"
+> [!CAUTION]
+> On most devices you'll need to **turn off the app battery optimizations** for the
+> app to count steps accurately. Forest uses a minimal amount of power and it won't impact your
+> battery life.
+> 
+> - Xiaomi devices running MIUI 14
+>     1. Go to Settings > Apps > Manage apps > Forest > Battery saver.
+>     2. Select "No restrictions".
+> 
+> - Devices running Lineage OS 22.2
+>     1. Go to Settings > Apps > All apps > Forest > App battery usage > Allow background usage
+>        (tap on the setting name to enter another menu).
+>     2. Enable “Allow background usage”.
+>     3. Change battery optimizations to “Unrestricted”.
+
+[//]: # (@formatter:on)
 
 ## 🪴 Technologies
 
@@ -53,3 +73,7 @@ A couple of years ago together with my friends, I took a part in a programming c
 - MVVM Design Pattern
 - Clean Architecture
 - Material You Dynamic Theming
+
+## 🐌 Resources
+
+https://www.notion.so/bartek537/Forest-223bc0c0f5be80bcbb4cc738eefe1ddd
