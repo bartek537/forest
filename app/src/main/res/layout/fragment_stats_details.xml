@@ -15,7 +15,7 @@
 
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/fragment_chart"
-            android:name="pl.bk20.forest.stats.presentation.StatsChartFragment"
+            android:name="pl.bartek537.forest.stats.presentation.StatsChartFragment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             tools:layout="@layout/fragment_stats_chart" />

@@ -7,7 +7,7 @@ plugins {
 }
 
 android {
-    namespace = 'pl.bk20.forest'
+    namespace = 'pl.bartek537.forest'
     compileSdk = 36
 
     defaultConfig {
