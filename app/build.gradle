@@ -43,6 +43,8 @@ android {
 
 dependencies {
 
+    implementation libs.koin.androidx
+
     coreLibraryDesugaring libs.tools.desugar.jdk.libs
 
     implementation libs.androidx.core.ktx

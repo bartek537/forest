@@ -9,10 +9,17 @@ import androidx.preference.PreferenceManager
 import androidx.room.Room
 import com.google.android.material.color.DynamicColors
 import kotlinx.coroutines.flow.MutableStateFlow
+import org.koin.android.ext.koin.androidContext
+import org.koin.android.ext.koin.androidLogger
+import org.koin.core.context.startKoin
+import org.koin.dsl.module
 import pl.bartek537.forest.core.data.source.ForestDatabase
 import pl.bartek537.forest.settings.data.source.SettingsStore
 import pl.bartek537.forest.settings.data.source.SettingsStoreImpl
 import java.time.LocalDate
+
+val forestApplicationModule = module {
+}
 
 class ForestApplication : Application() {
 
@@ -23,6 +30,12 @@ class ForestApplication : Application() {
 
     override fun onCreate() {
         super.onCreate()
+
+        startKoin {
+            androidLogger()
+            androidContext(this@ForestApplication)
+            modules(forestApplicationModule)
+        }
 
         DynamicColors.applyToActivitiesIfAvailable(this)
         PreferenceManager.setDefaultValues(this, R.xml.settings, false)
